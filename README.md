@@ -2,7 +2,7 @@
 
 This is all what you need to simulate droplet imapact via OpenFOAM.
 
-Usage: 
+Usage: Use the following commands
 
 >blockMesh
 
