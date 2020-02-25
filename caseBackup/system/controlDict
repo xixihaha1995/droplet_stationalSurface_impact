@@ -23,42 +23,32 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         4000;
+endTime         0.04;
 
-deltaT          1;
+deltaT          0.00001;
 
-writeControl    timeStep;
+writeControl    adjustableRunTime;
 
-writeInterval   100;
+writeInterval   0.0004;
 
 purgeWrite      0;
 
-writeFormat     binary;
+writeFormat     ascii;
 
 writePrecision  6;
 
-writeCompression off;
+writeCompression uncompressed;
 
 timeFormat      general;
 
 timePrecision   6;
 
 runTimeModifiable yes;
+adjustTimeStep on;
+maxCo 0.2;
+maxAlphaCo 0.2;
+maxDeltaT 1;
 
-functions
-{
-    forces
-    {
-        type            forces;
-        libs            ("libforces.so");
-        patches         (hull);
-        rhoInf          998.8;
-        log             on;
-        writeControl    timeStep;
-        writeInterval   1;
-        CofR            (2.929541 0 0.2);
-    }
-}
 
 
 // ************************************************************************* //

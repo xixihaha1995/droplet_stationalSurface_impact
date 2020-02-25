@@ -24,26 +24,28 @@ regions
 (
     // Set cell values
     // (does zerogradient on boundaries)
-    boxToCell
+    sphereToCell
     {
-        box (-999 -999 -999) (999 999 0.244);
+        centre  (0 0 0.002);
+            radius 0.00134;
 
         fieldValues
         (
             volScalarFieldValue alpha.water 1
+            volVectorFieldValue U (0 0 -0.678)
         );
     }
 
     // Set patch values (using ==)
-    boxToFace
-    {
-        box (-999 -999 -999) (999 999 0.244);
+    // boxToFace
+    // {
+    //     box (-999 -999 -999) (999 999 0.244);
 
-        fieldValues
-        (
-            volScalarFieldValue alpha.water 1
-        );
-    }
+    //     fieldValues
+    //     (
+    //         volScalarFieldValue alpha.water 1
+    //     );
+    // }
 );
 
 // ************************************************************************* //
