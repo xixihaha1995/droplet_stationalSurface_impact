@@ -26,13 +26,22 @@ regions
     // (does zerogradient on boundaries)
     sphereToCell
     {
-        centre  (0 0 0.002);
+        centre  (0 0 0.008);
             radius 0.00134;
 
         fieldValues
         (
             volScalarFieldValue alpha.water 1
-            volVectorFieldValue U (0 0 -0.678)
+            volVectorFieldValue U (0 0 -0.7)
+        );
+    }
+
+    boxToCell
+    {
+        box (0.01 -0.01 0) (-0.01 0.01 0.006);
+        fieldValues
+        (
+            volScalarFieldValue alpha.water 1
         );
     }
 
