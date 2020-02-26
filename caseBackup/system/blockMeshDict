@@ -14,7 +14,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-convertToMeters 0.001;
+convertToMeters 0.01;
 
 vertices
 (
@@ -30,7 +30,7 @@ vertices
 
 blocks
 (
-    hex (0 1 2 3 4 5 6 7) (50 50 30) simpleGrading (1 1 1)
+    hex (0 1 2 3 4 5 6 7) (25 25 15) simpleGrading (1 1 1)
 );
 
 edges
@@ -57,7 +57,7 @@ boundary
      }
     WALL1
      {
-         type patch;
+         type wall;
          faces
          (
             (0 3 7 4)
@@ -65,7 +65,7 @@ boundary
      }
      WALL2
      {
-         type patch;
+         type wall;
          faces
          (
             (3 2 6 7)
@@ -73,7 +73,7 @@ boundary
      }
      WALL3
      {
-         type patch;
+         type wall;
          faces
          (
             (1 2 6 5)
@@ -81,7 +81,7 @@ boundary
      }
      WALL4
      {
-         type patch;
+         type wall;
          faces
          (
             (0 1 5 4)
