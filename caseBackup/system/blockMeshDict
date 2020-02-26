@@ -30,7 +30,7 @@ vertices
 
 blocks
 (
-    hex (0 1 2 3 4 5 6 7) (25 25 15) simpleGrading (1 1 1)
+    hex (0 1 2 3 4 5 6 7) (50 50 30) simpleGrading (1 1 1)
 );
 
 edges
@@ -57,7 +57,7 @@ boundary
      }
     WALL1
      {
-         type wall;
+         type patch;
          faces
          (
             (0 3 7 4)
@@ -65,7 +65,7 @@ boundary
      }
      WALL2
      {
-         type wall;
+         type patch;
          faces
          (
             (3 2 6 7)
@@ -73,7 +73,7 @@ boundary
      }
      WALL3
      {
-         type wall;
+         type patch;
          faces
          (
             (1 2 6 5)
@@ -81,7 +81,7 @@ boundary
      }
      WALL4
      {
-         type wall;
+         type patch;
          faces
          (
             (0 1 5 4)
