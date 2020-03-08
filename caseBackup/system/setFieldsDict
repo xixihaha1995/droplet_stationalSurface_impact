@@ -24,6 +24,15 @@ regions
 (
     // Set cell values
     // (does zerogradient on boundaries)
+    boxToCell
+    {
+        box (0.01 -0.01 0) (-0.01 0.01 0.006);
+        fieldValues
+        (
+            volScalarFieldValue alpha.water 1
+        );
+    }
+    
     sphereToCell
     {
         centre  (0 0 0.008);
@@ -36,14 +45,7 @@ regions
         );
     }
 
-    boxToCell
-    {
-        box (0.01 -0.01 0) (-0.01 0.01 0.006);
-        fieldValues
-        (
-            volScalarFieldValue alpha.water 1
-        );
-    }
+
 
     // Set patch values (using ==)
     // boxToFace
