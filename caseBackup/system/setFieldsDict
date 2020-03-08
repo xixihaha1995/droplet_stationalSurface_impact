@@ -34,13 +34,13 @@ regions
         fieldValues
         (
             volScalarFieldValue alpha.water 1
-            volVectorFieldValue U (0 0 -0.7)
+            volVectorFieldValue U (0 0 -10)
         );
     }
 
     boxToCell
     {
-            box (-0.1 -0.1 0) (0.1 0.1 0.06);
+            box (-0.10 -0.10 0) (0.10 0.10 0.06);
             
             fieldValues
             (
