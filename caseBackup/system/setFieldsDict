@@ -28,13 +28,13 @@ regions
 
     sphereToCell
     {
-        centre  (0 0 0.08);
+        centre  (0 0 0.11);
             radius 0.00134;
 
         fieldValues
         (
             volScalarFieldValue alpha.water 1
-            volVectorFieldValue U (0 0 -0.7)
+            volVectorFieldValue U (0 0 -10)
         );
     }
 
