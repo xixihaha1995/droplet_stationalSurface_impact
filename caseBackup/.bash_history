@@ -6,3 +6,7 @@ exit
 exit
 paraFoam 
 exit
+blockMesh 
+paraFoam 
+./Allclean 
+exit
