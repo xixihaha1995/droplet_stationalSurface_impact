@@ -37,7 +37,7 @@ boundaryField
 
     TOP
     {
-        type empty;
+        type zeroGradient;
     }
 
     WALL3
