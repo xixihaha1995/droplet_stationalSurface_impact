@@ -21,37 +21,72 @@ internalField   uniform 0;
 
 boundaryField
 {
-    leftWall
+    //- Set patchGroups for constraint patches
+    // #includeEtc "caseDicts/setConstraintTypes"
+
+    WALL2
     {
-        type            zeroGradient;
+        type zeroGradient;
     }
-    rightWall
+
+    WALL1
     {
-        type            zeroGradient;
+        type zeroGradient;  
+
     }
-    lowerWall
+
+    TOP
     {
-        type            zeroGradient;
+        type empty;
     }
-    atmosphere
+
+    WALL3
     {
-        type            inletOutlet;
-        inletValue      uniform 0;
-        value           uniform 0;
+         type zeroGradient;
     }
-    defaultFaces
+    WALL4
     {
-        type            empty;
+        type zeroGradient;
     }
-    porous_half0
+    BTM
     {
-        type            cyclic;
-    }
-    porous_half1
-    {
-        type            cyclic;
+        type zeroGradient;
     }
 }
+
+// boundaryField
+// {
+//     leftWall
+//     {
+//         type            zeroGradient;
+//     }
+//     rightWall
+//     {
+//         type            zeroGradient;
+//     }
+//     lowerWall
+//     {
+//         type            zeroGradient;
+//     }
+//     atmosphere
+//     {
+//         type            inletOutlet;
+//         inletValue      uniform 0;
+//         value           uniform 0;
+//     }
+//     defaultFaces
+//     {
+//         type            empty;
+//     }
+//     porous_half0
+//     {
+//         type            cyclic;
+//     }
+//     porous_half1
+//     {
+//         type            cyclic;
+//     }
+// }
 
 
 // ************************************************************************* //
