@@ -28,7 +28,7 @@ regions
 
     sphereToCell
     {
-        centre  (0 0 0.06134);
+        centre  (0 0 0.03134);
             radius 0.00134;
 
         fieldValues
@@ -40,7 +40,7 @@ regions
 
     boxToCell
     {
-            box (-0.10 -0.10 0) (0.10 0.10 0.06);
+            box (-0.02 -0.02 0) (0.02 0.02 0.03);
             
             fieldValues
             (
