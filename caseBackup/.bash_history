@@ -36,3 +36,12 @@ ls
 cd 
 ./Allclean 
 exit
+ls
+blockMesh 
+setFields 
+decomposePar 
+cd system/
+nano decomposeParDict 
+cd ..
+./Allclean 
+exit
