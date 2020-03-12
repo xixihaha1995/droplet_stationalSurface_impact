@@ -57,7 +57,7 @@ boundary
      }
     WALL1
      {
-         type patch;
+         type wall;
          faces
          (
             (0 3 7 4)
@@ -65,7 +65,7 @@ boundary
      }
      WALL2
      {
-         type patch;
+         type wall;
          faces
          (
             (3 2 6 7)
@@ -73,7 +73,7 @@ boundary
      }
      WALL3
      {
-         type patch;
+         type wall;
          faces
          (
             (1 2 6 5)
@@ -81,7 +81,7 @@ boundary
      }
      WALL4
      {
-         type patch;
+         type wall;
          faces
          (
             (0 1 5 4)
