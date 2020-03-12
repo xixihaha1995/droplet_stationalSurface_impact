@@ -28,7 +28,7 @@ method          simple;
 
 simpleCoeffs
 {
-    n               (2 0 4);
+    n               (2 1 4);
     delta           0.001;
 }
 

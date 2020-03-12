@@ -5,3 +5,10 @@ decomposePar
 exit
 ./Allclean 
 exit
+ls
+blockMesh 
+setFields 
+decomposePar 
+exit
+./Allclean 
+exit
