@@ -40,24 +40,24 @@ boundaryField
 
     WALL1
     {
-        type pressureInletOutletVelocity;
-        value uniform (0 0 0);
+        type            fixedValue;
+        value           uniform (0 0 0);
     }
 
     WALL2
     {
-        type pressureInletOutletVelocity;
-        value uniform (0 0 0);
+        type            fixedValue;
+        value           uniform (0 0 0);
     }
     WALL3
     {
-        type pressureInletOutletVelocity;
-        value uniform (0 0 0);
+        type            fixedValue;
+        value           uniform (0 0 0);
     }
     WALL4
     {
-        type pressureInletOutletVelocity;
-        value uniform (0 0 0);
+        type            fixedValue;
+        value           uniform (0 0 0);
     }
 }
 

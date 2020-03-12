@@ -26,15 +26,13 @@ boundaryField
 
     WALL2
     {
-      type inletOutlet;
-      inletValue uniform 0.01;
+      type kqRWallFunction;
       value uniform 0.01;
     }
 
     WALL1
     {
-      type inletOutlet;
-      inletValue uniform 0.01;
+      type kqRWallFunction;
       value uniform 0.01;
     }
 
@@ -47,15 +45,13 @@ boundaryField
 
     WALL3
     {
-      type inletOutlet;
-      inletValue uniform 0.01;
+      type kqRWallFunction;
       value uniform 0.01;
     }
 
     WALL4
     {
-      type inletOutlet;
-      inletValue uniform 0.01;
+      type kqRWallFunction;
       value uniform 0.01;
     }
     BTM

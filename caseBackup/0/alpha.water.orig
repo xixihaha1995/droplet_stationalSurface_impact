@@ -26,8 +26,9 @@ boundaryField
 
     WALL1
     {
-        type            inletOutlet;
-        inletValue      uniform 0;
+        type            constantAlphaContactAngle;
+        theta0          150;
+        limit           gradient; 
         value           uniform 0;
     }
 
@@ -40,20 +41,23 @@ boundaryField
 
     WALL4
     {
-        type            inletOutlet;
-        inletValue      uniform 0;
+        type            constantAlphaContactAngle;
+        theta0          150;
+        limit           gradient; 
         value           uniform 0;
     }
     WALL3
     {
-        type            inletOutlet;
-        inletValue      uniform 0;
+        type            constantAlphaContactAngle;
+        theta0          150;
+        limit           gradient; 
         value           uniform 0;
     }
     WALL2
     {
-        type            inletOutlet;
-        inletValue      uniform 0;
+        type            constantAlphaContactAngle;
+        theta0          150;
+        limit           gradient; 
         value           uniform 0;
     }
     BTM 

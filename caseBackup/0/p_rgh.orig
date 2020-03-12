@@ -26,26 +26,14 @@ boundaryField
 
     WALL2
     {
-         type totalPressure;
-         p0 uniform 1.01e05;
-         U U;
-         phi phi;
-         rho rho;
-         psi none;
-         gamma 1;
-         value uniform 1.01e05;
+        type fixedFluxPressure;
+        value uniform 1.01e05;   
     }
 
     WALL1
     {
-         type totalPressure;
-         p0 uniform 1.01e05;
-         U U;
-         phi phi;
-         rho rho;
-         psi none;
-         gamma 1;
-         value uniform 1.01e05;
+        type fixedFluxPressure;
+        value uniform 1.01e05;   
     }
 
     TOP
@@ -62,25 +50,13 @@ boundaryField
 
     WALL3
     {
-         type totalPressure;
-         p0 uniform 1.01e05;
-         U U;
-         phi phi;
-         rho rho;
-         psi none;
-         gamma 1;
-         value uniform 1.01e05;
+        type fixedFluxPressure;
+        value uniform 1.01e05;   
     }
     WALL4
     {
-        type totalPressure;
-        p0 uniform 1.01e05;
-        U U;
-        phi phi;
-        rho rho;
-        psi none;
-        gamma 1;
-        value uniform 1.01e05;  
+        type fixedFluxPressure;
+        value uniform 1.01e05;   
     }
     BTM
     {
