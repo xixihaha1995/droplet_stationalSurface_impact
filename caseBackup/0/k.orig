@@ -17,7 +17,7 @@ FoamFile
 
 dimensions      [0 2 -2 0 0 0 0];
 
-internalField   uniform 0.01;
+internalField   uniform 0.1;
 
 boundaryField
 {
@@ -27,26 +27,26 @@ boundaryField
     WALL2
     {
       type kqRWallFunction;
-      value uniform 0.01;
+      value uniform 0.1;
     }
 
     WALL1
     {
       type kqRWallFunction;
-      value uniform 0.01;
+      value uniform 0.1;
     }
 
     TOP
     {
       type inletOutlet;
-      inletValue uniform 0.01;
-      value uniform 0.01;
+      inletValue uniform 0.1;
+      value uniform 0.1;
     }
 
     WALL3
     {
       type kqRWallFunction;
-      value uniform 0.01;
+      value uniform 0.1;
     }
 
     WALL4
