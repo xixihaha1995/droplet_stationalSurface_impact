@@ -40,24 +40,21 @@ boundaryField
 
     WALL1
     {
-        type            fixedValue;
-        value           uniform (0 0 0);
+        type            noSlip;
+
     }
 
     WALL2
     {
-        type            fixedValue;
-        value           uniform (0 0 0);
+        type            noSlip;
     }
     WALL3
     {
-        type            fixedValue;
-        value           uniform (0 0 0);
+        type            noSlip;
     }
     WALL4
     {
-        type            fixedValue;
-        value           uniform (0 0 0);
+        type            noSlip;
     }
 }
 
