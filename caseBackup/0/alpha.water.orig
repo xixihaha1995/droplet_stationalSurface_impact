@@ -26,10 +26,7 @@ boundaryField
 
     WALL1
     {
-        type            constantAlphaContactAngle;
-        theta0          150;
-        limit           gradient; 
-        value           uniform 0;
+         type            zeroGradient;
     }
 
     TOP
@@ -41,31 +38,19 @@ boundaryField
 
     WALL4
     {
-        type            constantAlphaContactAngle;
-        theta0          150;
-        limit           gradient; 
-        value           uniform 0;
+        type            zeroGradient;
     }
     WALL3
     {
-        type            constantAlphaContactAngle;
-        theta0          150;
-        limit           gradient; 
-        value           uniform 0;
+         type            zeroGradient;
     }
     WALL2
     {
-        type            constantAlphaContactAngle;
-        theta0          150;
-        limit           gradient; 
-        value           uniform 0;
+        type            zeroGradient;
     }
     BTM 
     {
-        type            constantAlphaContactAngle;
-        theta0          150;
-        limit           gradient; 
-        value           uniform 0;
+        type            zeroGradient;
     }
 }
 
