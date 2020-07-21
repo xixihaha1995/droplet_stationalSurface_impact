@@ -28,19 +28,19 @@ regions
 
     sphereToCell
     {
-        centre  (0 0 0.06134);
-            radius 0.00134;
+        centre  (0 0 0.0142);
+            radius 0.0009;
 
         fieldValues
         (
             volScalarFieldValue alpha.water 1
-            volVectorFieldValue U (0 0 -10)
+            volVectorFieldValue U (0 0 -1.8)
         );
     }
 
     boxToCell
     {
-            box (-0.10 -0.10 0) (0.10 0.10 0.06);
+            box (0 0 0) (0.04 0.04 0.013);
             
             fieldValues
             (
